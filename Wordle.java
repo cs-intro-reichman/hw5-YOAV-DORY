@@ -132,8 +132,11 @@ public class Wordle {
             attempt++;
         }
 
-        if (!won) {
+        if (won) {
             System.out.println("Congratulations! You guessed the word in " +attempt+ " attempts.");
+        }else{
+            System.out.println("Sorry, you did not guess the word.");
+            System.out.println("The secret word was: " + secret);
         }
 
         inp.close();
